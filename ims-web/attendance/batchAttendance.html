@@ -1,13 +1,12 @@
-
-    <section class="content-header">
+<section class="content-header">
       <h1>
         Attendance
         <small>View/Take Attendance</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
-        <li>Attedance</li>
-        <li class="active">Batch</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Tables</a></li>
+        <li class="active">Data tables</li>
       </ol>
     </section>
 
@@ -30,19 +29,21 @@
                   <th>Batch Name</th>
                   <th>Course</th>
                   <th>Timing</th>
+                  <th>Days</th>
                   <th>No. of Students</th>
                   <th></th>
                 </tr>
-		</thead>
-                <tbody>
-				</tbody>
+                </thead>
+                <tbody></tbody>
                 <tfoot>
                 <tr>
                   <th>Batch ID</th>
                   <th>Batch Name</th>
-                  <th>Couse</th>
+                  <th>Course</th>
+                  <th>Timing</th>
+                  <th>Days</th>
                   <th>No. of Students</th>
-                  <th>Option</th>
+                  <th></th>
                 </tr>
                 </tfoot>
               </table>
@@ -65,8 +66,9 @@
    row.insertCell(1).innerHTML='abc'+i;
    row.insertCell(2).innerHTML='core java';
    row.insertCell(3).innerHTML='6 p.m. - 3 a.m';
-   row.insertCell(4).innerHTML=i*2;
-   row.insertCell(5).innerHTML='<a  class="btn btn-info" type="button"><i class="fa fa-eye"></i></a><a class="btn btn-success" ><i class="fa fa-edit"></i> </a><a  class="btn btn-danger"  data-placement="top" data-toggle="tooltip" data-original-title="Delete record"><i class="fa fa-trash"></i></a>';
+   row.insertCell(4).innerHTML='weekend';      
+   row.insertCell(5).innerHTML=i*2;
+   row.insertCell(6).innerHTML='<a  class="btn btn-info" type="button"><i class="fa fa-eye"></i></a><a class="btn btn-success" ><i class="fa fa-edit"></i> </a><a  class="btn btn-danger"  data-placement="top" data-toggle="tooltip" data-original-title="Delete record"><i class="fa fa-trash"></i></a>';
 }
     
     

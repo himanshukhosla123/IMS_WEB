@@ -1,16 +1,17 @@
+
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
      
-     <section class="content-header">
+    <section class="content-header">
       <h1>
         Attendance
         <small>View/Take Attendance</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
-        <li>Attendance</li>
-        <li class="active">Student</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li class="active">Student Attendance</li>
       </ol>
     </section>
 
@@ -23,32 +24,32 @@
      <a class="btn btn-success"><i class="fa fa-arrow-left"></i>&nbsp;Return</a>
 	</div>		
      </div>
+
       <div class="row">
         <div class="col-xs-12">
           <!-- /.box -->
 
           <div class="box">
             <div class="box-header">
-             
+              </div>
             <!-- /.box-header -->
             <div class="box-body">
-             <div class="row">
+             <div class="row" style="margin-bottom:10px;">
              <div class="col-xs-4">
-              <h3 class="box-title">Batch : <span>JC-101</span></h3>
+              <h3 class="no-margin">Batch : <span>JC-101</span></h3>
               </div>
               <div class="col-xs-4">
-              <h3 class="box-title">Course : <span>Core Java</span></h3>
+              <h3 class="no-margin">Course : <span>Core Java</span></h3>
               </div>
               <div class="col-xs-4">
                 <div class="input-group date">
-                  <label class="input-group-addon" for="datpicker">
+                  <label class="input-group-addon" for="datepicker">
                     <i class="fa fa-calendar"></i>
                   </label>
-                  <input type="text" class="form-control pull-right" id="datepicker">
+                  <input type="text" class="form-control" id="datepicker">
                 </div>  
               </div>
               </div>
-            </div>
               <table id="student_attendance_table" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
@@ -61,7 +62,7 @@
                   <th>Friday</th>
                   <th>Saturday</th>
                   <th>Sunday</th>
-                  <th>Option</th>
+                  <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -262,7 +263,7 @@
 									</td>
                 </tr>
                 <tr>
-		  <td>101</td>
+                  <td>101</td>
                   <td>Ram</td>
                   <td>P</td>
                   <td>A</td>
@@ -357,11 +358,11 @@
                   <th>Friday</th>
                   <th>Saturday</th>
                   <th>Sunday</th>
-                  <th>Option</th>
+                  <th></th>
                 </tr>
                 </tfoot>
               </table>
-            </div>
+              </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->

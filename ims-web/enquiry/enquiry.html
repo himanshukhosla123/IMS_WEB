@@ -21,7 +21,7 @@
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <table id="example2" class="table table-bordered table-hover">
+                                <table id="enquiry_table" class="table table-bordered table-hover">
                                     <thead>
                                         <tr>
 
@@ -450,13 +450,13 @@
     <!-- page script -->
     <script>
         $(function(){
-            $('#example2').DataTable({
+            $('#enquiry_table').DataTable({
                 'paging': true,
-                'lengthChange': false,
+                'lengthChange': true,
                 'searching': false,
                 'ordering': true,
-                'info': true,
-                'autoWidth': false
+                'info': false,
+                'autoWidth': true
             })
         })
 

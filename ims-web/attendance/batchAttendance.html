@@ -68,6 +68,13 @@
    row.insertCell(3).innerHTML='6 p.m. - 3 a.m';
    row.insertCell(4).innerHTML='weekend';      
    row.insertCell(5).innerHTML=i*2;
+      row.insertCell(4).innerHTML="<span>"+"pending"+"</span>".toUpperCase();
+      row.children[4].children[0].classList.add("badge");
+   if(row.children[4].children[0].innerHTML.toLowerCase()==="paid"){
+       row.children[4].children[0].classList.add("bg-green");
+   }else{
+       row.children[4].children[0].classList.add("bg-red");
+   }
    row.insertCell(6).innerHTML='<a  class="btn btn-info" type="button"><i class="fa fa-eye"></i></a><a class="btn btn-success" ><i class="fa fa-edit"></i> </a><a  class="btn btn-danger"  data-placement="top" data-toggle="tooltip" data-original-title="Delete record"><i class="fa fa-trash"></i></a>';
 }
     

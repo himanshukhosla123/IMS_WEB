@@ -1,0 +1,34 @@
+{
+    "courseList": [
+        {
+            "cid":"0011",
+            "name":"core",
+            "fees":"56000",
+            "approx-duration":"10 months",
+            "batch-list":["batch-1","batch-2","batch-3","batch-4"]
+        },
+         {
+            "cid":"0011",
+            "name":"core",
+            "fees":"56000",
+            "approx-duration":"10 months",
+            "batch-list":["batch-1","batch-2","batch-3","batch-4"]
+        },
+         {
+            "cid":"0011",
+            "name":"core",
+            "fees":"56000",
+            "approx-duration":"10 months",
+            "batch-list":["batch-1","batch-2","batch-3","batch-4"]
+        },
+         {
+            "cid":"0011",
+            "name":"core",
+            "fees":"56000",
+            "approx-duration":"10 months",
+            "batch-list":["batch-1","batch-2","batch-3","batch-4"]
+        }
+                    
+    ]
+    
+}

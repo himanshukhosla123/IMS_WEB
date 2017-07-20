@@ -1,0 +1,68 @@
+{
+    "batchList":[
+        {
+            "bid":"0023",
+            "name":"abcs",
+            "course":"advance",
+            "timings":"2:00 - 4:00",
+            "days":"weekdays",
+            "no-of-students":"56",
+            "studarr":[{"sid":"1232","name":"wqbf"},
+                        {"sid":"1232","name":"wqbf"},
+                       {"sid":"1232","name":"wqbf"},
+                      {"sid":"1232","name":"wqbf"}
+                      ]                               
+        },
+        {
+            "bid":"0024",
+            "name":"abcs",
+            "course":"advance",
+            "timings":"2:00 - 4:00",
+            "days":"weekend",
+            "no-of-students":"45",
+            "studarr":[{"sid":"1232","name":"wqbf"},
+                        {"sid":"1232","name":"wqbf"},
+                       {"sid":"1232","name":"wqbf"},
+                      {"sid":"1232","name":"wqbf"}
+                      ]                      
+        },
+        {
+            "bid":"0053",
+            "name":"abcs",
+            "course":"advance",
+            "timings":"2:00 - 4:00",
+            "days":"weekdays",
+            "no-of-students":"56",
+             "studarr":[{"sid":"1232","name":"wqbf"},
+                        {"sid":"1232","name":"wqbf"},
+                       {"sid":"1232","name":"wqbf"},
+                      {"sid":"1232","name":"wqbf"}
+                      ]                      
+                      
+        },
+        {
+            "bid":"0063",
+            "name":"abcs",
+            "course":"advance",
+            "timings":"2:00 - 4:00",
+            "days":"weekend",
+            "no-of-students":"57",
+             "studarr":[{"sid":"1232","name":"wqbf"},
+                        {"sid":"1232","name":"wqbf"},
+                       {"sid":"1232","name":"wqbf"},
+                      {"sid":"1232","name":"wqbf"}
+                      ]                      
+                      
+        }
+        
+        
+        
+        
+    ]
+    
+    
+    
+    
+    
+    
+}

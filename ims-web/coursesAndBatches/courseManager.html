@@ -1,8 +1,86 @@
-<section class="content-header">
+<!-- Modal -->
+<div id="course_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><strong>Course</strong></h4>
+      </div>
+      <div class="modal-body">
+      <form class="form-horizontal">
+       
+        <div class="form-group">
+                  <label for="course_id" class="col-sm-2 control-label"> Course ID</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="course_id" placeholder="Course ID">
+                  </div>
+        </div>
+        <div class="form-group">
+                  <label for="course_name1" class="col-sm-2 control-label"> Course Name</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="course_name1" placeholder="Course Name">
+                  </div>
+        </div>    
+        <div class="form-group">
+                  <label for="Course_Fees" class="col-sm-2 control-label">Course Fee</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="Course_Fees" placeholder="Course Fee">
+                  </div>
+        </div>    
+        <div class="form-group">
+                  <label for="Duration" class="col-sm-2 control-label">Duration(Approx.)</label>
+
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="Duration" placeholder="Duration">
+                  </div>
+        </div> 
+        
+        <div class="form-group">
+                  <label for="course_name1" class="col-sm-2 control-label"> No.of Current Batches : <span>9</span></label>
+
+                  <div class="col-sm-9">
+                    <a href="" class="btn btn-info">Batch-1</a>
+                    <a href="" class="btn btn-info">Batch-2</a>
+                    <a href="" class="btn btn-info">Batch-3</a>
+                    <a href="" class="btn btn-info">Batch-4</a>
+                    <a href="" class="btn btn-info">Batch-5</a>
+                    <a href="" class="btn btn-info">Batch-5</a>
+                    <a href="" class="btn btn-info">Batch-5</a>
+                    <a href="" class="btn btn-info">Batch-5</a>
+                    <a href="" class="btn btn-info">Batch-5</a>
+    
+                  </div>
+        </div>                 
+                       
+      </form>
+          </div>
+      
+      <div class="modal-footer">
+       <button type="button" class="btn btn-primary" data-dismiss="modal">
+           Save
+       </button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--End of Modal-->    
+     
+
+     <section class="content-header">
       <h1>
         Courses
 <!--        <small>Control panel</small>-->
+         <button type="button" class="btn btn-success" data-target="#course_modal" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp; Add Course</button>
+         
       </h1>
+      
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
         <li>Courses & Batch</li>
@@ -13,8 +91,63 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            
 <!--        put your coloums here    -->
+          <div class="col-xs-12">
+              <div class="box">
+                  <div class="box-header">
+                      <h3 class="box-title">Courses</h3>
+                  </div>
+                 
+            <div class="box-body">
+              <table id="batch_attendance_table" class="table table-bordered table-hover table-striped">
+                <thead>
+                <tr>
+                  <th>Course ID</th>
+                  <th>Course Name</th>
+                  <th>Course Fee</th>
+                  <th>Duration(Approx.)</th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                <tr>
+                  <th>Course ID</th>
+                  <th>Course Name</th>
+                  <th>Course Fee</th>
+                  <th>Duration(Approx.)</th>
+                  <th></th>
+                </tr>
+                </tfoot>
+              </table>
+            </div> 
+              </div>
+          </div> 
             
         </div>
 </section>
+<script>
+    var tablebody = $("#batch_attendance_table tbody")[0];
+  for(var i=1;i<25;i++){
+   var row= tablebody.insertRow();
+   row.insertCell(0).innerHTML="015"+i;
+   row.insertCell(1).innerHTML='core java';
+   row.insertCell(2).innerHTML='Rs. 6000';
+   row.insertCell(3).innerHTML='2 Months';      
+   row.insertCell(4).innerHTML='<a  class="btn btn-info" type="button"><i class="fa fa-eye"></i></a><a class="btn btn-success" ><i class="fa fa-edit"></i> </a><a  class="btn btn-danger"  data-placement="top" data-toggle="tooltip" data-original-title="Delete record"><i class="fa fa-trash"></i></a>';
+}
+    
+    
+$("#batch_attendance_table").DataTable({
+      'paging'      : true,
+      'lengthChange': true,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : true
+    });
+    
+    $(".content-header h1 button").on("click",function(){
+        console.log("fkjbkgjsdg");
+    });
+</script>
